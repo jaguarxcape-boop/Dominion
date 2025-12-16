@@ -1,2 +1,2 @@
-# DominionWebsiteREACT
+# Dominion
 DominionWebsiteCreatedWithReact
