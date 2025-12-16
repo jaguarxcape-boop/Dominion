@@ -1,7 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout/jsx/layout";
 import Homepage from "./Pages/homepage";
-// import AboutPage from "./Pages/about";
+import AboutPage from "./Pages/about";
 import OurTeam from "./Pages/team";
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
-           {/* <Route path="/about" element={<AboutPage />} /> */}
+           <Route path="/about" element={<AboutPage />} />
          <Route path="/ourstaff" element={<OurTeam />} />
         </Route>
 

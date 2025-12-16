@@ -20,32 +20,14 @@
 
 .aboutIntro>h1 {
     font-size: 3em;
-    animation-name: h1relax;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-    
     color: #005A00;
     text-decoration: underline;
     text-decoration-line: overline;
     transition: 1s !important;
-    transform: perspective(400px) rotateY(340deg);
 
 }
 
-@keyframes h1relax {
-    0% {
-        transform: translate(-1000px)
-    }
 
-    100% {
-        transform: translate(0px)
-    }
-}
-
-.aboutIntro:hover>h1 {
-
-    transform: rotateY(360deg);
-}
 
 .aboutIntro>p {
     font-weight: lighter;
@@ -75,7 +57,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    transform: perspective(2000px) rotateY(370deg);
+
 
 }
 
