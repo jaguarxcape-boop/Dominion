@@ -1,0 +1,58 @@
+.afterBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.afterBanner>div {
+
+    padding: 6px;
+    margin: 5px;
+
+}
+
+
+#afterBannerTextContainerDiv>section {
+    display: flex;
+    flex-direction: row;
+}
+
+#afterBannerTextContainerDiv>section>div {
+    padding: 15px;
+
+}
+
+#afterBannerTextContainerDiv>section>div>h3 {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#afterBannerTextContainerDiv>section>div>h3,
+p {
+    line-height: 30px;
+    text-align: justify;
+
+}
+
+@media (max-width: 1024px) {
+    .afterBanner>div>img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .afterBanner {
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width: 500px) {
+    #afterBannerTextContainerDiv>section {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+

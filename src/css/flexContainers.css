@@ -1,0 +1,60 @@
+.horizontalFlexWithButton {
+user-select: none;
+-webkit-user-select: none;
+    overflow: hidden;
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+    -webkit-user-drag: none;
+    height: 500px;
+}
+
+.horizontalFlexWithButton > *{
+    position: relative;
+    display: inline-flex;
+    width: max-content;
+}
+
+.horizontalFlexWithButton > div> *{
+    margin: 5px 35px;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 30%;
+    background-color: white;
+    opacity: 0.3;
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+    z-index: 1 !important;
+ 
+  
+     font-size: 100px;
+   
+}
+ 
+
+.prev:hover, .next:hover{
+    opacity: 0.9;
+  box-shadow: rgba(0,0,0,.5) 0px 2px 2px 0px;
+
+}
+.prev{
+
+
+    left: 0;
+}
+.prev > p{
+    font-size: 100px;
+}
+
+.next{
+   
+
+right: 0;
+}

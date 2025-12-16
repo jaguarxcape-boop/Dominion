@@ -1,0 +1,43 @@
+button.button{
+    outline: none;
+}
+    .button{
+        height: 50px;
+        background-color: white;
+        width: fit-content;
+        max-width: 200px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-weight: bold;
+        margin: auto;
+        font-size: 1.2em;
+        cursor: pointer;
+        background-color: green;
+        user-select: none;
+        -webkit-user-select: none;
+        
+    }
+
+    .button >*{
+        color:white;
+    }
+    .button:hover{
+        background-color: white;
+        color: green;
+        border-radius: 5px;
+    }
+    .button:hover >*{
+        color:green;
+    }
+
+    @media(max-width:700px){
+        .button{
+            font-size: 1.2em;
+            /* width: fit-content; */
+           
+            padding: 0;
+        }
+    }

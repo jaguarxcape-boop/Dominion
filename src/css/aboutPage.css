@@ -1,0 +1,153 @@
+.aboutIntro {
+    margin: auto;
+    margin-bottom: 150px;
+    width: 90vw;
+    padding: 0px 20px;
+    transition: 1s;
+}
+
+.aboutIntroContainer {
+    background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("../images/Webp/5Z9A8248.webp");
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -5px;
+    padding-top: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.aboutIntro>h1 {
+    font-size: 3em;
+    animation-name: h1relax;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    
+    color: #005A00;
+    text-decoration: underline;
+    text-decoration-line: overline;
+    transition: 1s !important;
+    transform: perspective(400px) rotateY(340deg);
+
+}
+
+@keyframes h1relax {
+    0% {
+        transform: translate(-1000px)
+    }
+
+    100% {
+        transform: translate(0px)
+    }
+}
+
+.aboutIntro:hover>h1 {
+
+    transform: rotateY(360deg);
+}
+
+.aboutIntro>p {
+    font-weight: lighter;
+    line-height: 40px;
+    text-align: start;
+    font-size: 1.5em;
+
+    /* text-indent: 100px; */
+    animation-name: relax;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes relax {
+    0% {
+        transform: translate(1000px)
+    }
+
+    100% {
+        transform: translate(0px)
+    }
+}
+
+.meetourTeamDiv {
+    /* width: 80vw; */
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    transform: perspective(2000px) rotateY(370deg);
+
+}
+
+.meetourTeamDiv>h1 {
+    margin: auto;
+
+}
+
+
+@media(max-width:1000px) {
+    .aboutIntro {
+        margin: auto;
+        margin-bottom: 70px;
+    }
+
+    .aboutIntro>h1 {
+        font-size: 2em;
+
+    }
+
+    .aboutIntro>p {
+        font-size: 1em;
+        line-height: 30px;
+
+    }
+}
+
+@media(max-width:700px) {
+    .aboutIntro>h1 {
+        font-size: 2em;
+        animation-name: h1relax;
+        animation-timing-function: ease-in;
+        animation-duration: .4s;
+    }
+
+    .aboutIntro>p {
+        font-size: 1em;
+        line-height: 30px;
+
+    }
+
+    .meetourTeamDiv {
+        width: 100vw;
+        text-align: start;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        transform: rotateY(0);
+
+    }
+
+    .meetourTeamDiv>h1 {
+        margin: auto;
+        transform: rotateY(0);
+
+    }
+
+    .meetourTeamDiv:hover>h1 {
+        transform: none;
+    }
+}
+
+@media(max-width:400px) {
+    .aboutIntro>h1 {
+        font-size: 1.3em;
+
+    }
+
+    .aboutIntro>p {
+        font-size: .8em;
+        line-height: 25px;
+
+    }
+}

@@ -1,0 +1,21 @@
+{
+
+    "greetings": {
+        "button": {
+            "title": "Connect With Us",
+            "to": "/connect"
+        },
+        "header": "Welcome to Advanced Dominion Academy",
+        "text": "Here, we go beyond excellence"
+
+    },
+    "message": {
+        "img":"images/director.jpg"
+    },
+    "latestNews": {
+        "hasImage": true,
+        "image": "",
+        "headline": "Zipline Excursion",
+        "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam enim quia dignissimos esse quas sapiente, consequatur corporis eos unde dolorum ad itaque sint, facilis quis. Sequi vero perferendis corrupti? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fugiat error inventore eius, provident quis officia nam minima commodi reiciendis, necessitatibus obcaecati ipsum corporis, architecto amet laudantium ut autem maiores?"
+    }
+}

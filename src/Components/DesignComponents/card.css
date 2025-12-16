@@ -1,0 +1,77 @@
+.homepageIntroduction {
+  position: relative;
+  margin: 5px;
+  min-height: 400px;
+  width: 400px;
+  overflow: hidden;
+  transition: ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px 0px;
+  padding: 5px;
+}
+
+
+.flexibleCard {
+  max-width: fit-content;
+  min-height: fit-content;
+  height: fit-content;
+}
+
+
+.card>.ImgDiv {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+}
+
+.card>.ImgDiv>img {
+  height: 100%;
+  transform: scale(1);
+}
+
+.card>.text {
+  margin: auto;
+  padding: 0px 10px;
+
+  text-align: center;
+  font-weight: lighter;
+  line-height: 2;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 35px 0px;
+
+}
+
+.card:hover>.ImgDiv {
+  box-shadow: rgba(0, 0, 0, .5) 0px 5px 5px 0px;
+
+}
+
+.card>.author {
+
+  width: fit-content;
+
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 35px 0px;
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: lighter;
+
+}
+
+.card>h1.big {
+  font-size: 4em;
+}
+
+
+@media(max-width:400px){
+  .card{
+width: 90vw;
+  }
+     
+}
