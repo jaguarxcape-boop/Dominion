@@ -198,7 +198,6 @@
 
     .prev,
     .next {
-        display: none !important;
         position: absolute;
         border: none;
         top: 14%;
@@ -216,7 +215,6 @@
 
     .prev,
     .next {
-        display: none;
         position: absolute;
         border: none;
         top: 14%;
