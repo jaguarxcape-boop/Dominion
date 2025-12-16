@@ -71,7 +71,7 @@ const AboutPage = () => {
             </p>
         </div>
 
-        <div className="aboutIntro meetourTeamDiv animate-on-scroll">
+        <div className="aboutIntro  animate-on-scroll">
             <h1>Meet Our Hardworking Team</h1>
 
 <div style={{position:"relative",margin:"auto"}}>

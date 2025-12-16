@@ -96,7 +96,7 @@ export const StaffWrapper = ({ staffDetails, hasHeader, className, updateActiveS
       {String(hasHeader).trim() &&
         <h1 style={{ fontSize: "3em" }}>{hasHeader}</h1>
       }
-      <section className="gridWrapper animate-on-scroll">
+      <section className="gridWrapper">
         {staffDetails.staff.allStaff.map((key =>
           <div className="imageDiv" style={style && style.imageDiv} key={id++} onClick={() => updateActiveStaff(key)}>
             <img
