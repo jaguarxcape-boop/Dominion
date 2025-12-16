@@ -19,6 +19,7 @@
     padding: 10px 0;
     overflow: hidden;
     color: white;
+
 }
 
 .container-responsive>div {
@@ -28,6 +29,7 @@
     width: 50vw;
     margin: auto;
     align-items: center;
+    padding: 10px;
   
 }
 
@@ -39,7 +41,6 @@
 
 .container-responsive>div>p {
     text-align: justify;
-    padding: 5px 50px 0px 0px;
     font-weight: lighter;
     font-size: 1em;
     line-height: 40px
@@ -50,6 +51,7 @@
         max-height: fit-content;
         height: fit-content !important;
         flex-direction: column;
+            gap:100px;
     }
 
     .container-responsive>div {

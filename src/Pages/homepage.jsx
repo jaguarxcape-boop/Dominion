@@ -16,7 +16,7 @@ const style = {
 
 
 const Homepage = () => {
-
+ 
 
   useEffect(() => {
     const elements = document.querySelectorAll(".animate-on-scroll");
