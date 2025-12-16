@@ -16,7 +16,7 @@ const style = {
 
 
 const Homepage = () => {
- 
+
 
   useEffect(() => {
     const elements = document.querySelectorAll(".animate-on-scroll");
@@ -43,7 +43,7 @@ const Homepage = () => {
 
 
   return <div id='homepage'>
-    <section id="welcomeResponsive" className=" container-responsive" style={style}>
+    <section id="welcomeResponsive" className="container-responsive" style={style}>
 
       <div className="animate-on-scroll ">
         <h1>Welcome to Advanced Dominion Academy</h1>
@@ -64,14 +64,16 @@ const Homepage = () => {
     </section>
 
     <h1 style={{ marginLeft: "20px" }}>Latest News</h1>
-    <section className="container-responsive animate-on-scroll " style={{ "gridGap": "40px", backgroundColor: "white", backgroundImage: "none", color: "black" }}>
+    <section className="container-responsive"
+      style={{ "gridGap": "40px", backgroundColor: "white", backgroundImage: "none", color: "black" }}
+    >
 
       <div style={{ position: "relative" }} className="animate-on-scroll">
 
         <StaffWrapper staffDetails={staff} style={style} />
       </div>
 
-      <div >
+      <div className="animate-on-scroll">
         <h1>{latestNews.headline}</h1>
         <p>{latestNews.news}</p>
       </div>

@@ -92,7 +92,7 @@ export const StaffWrapper = ({ staffDetails, hasHeader, className, updateActiveS
 
   var id = 0;
   return <>
-    <div className={`staffWrapper animate-on-scroll ${className}`} style={style && style.staffWrapper}>
+    <div className={`staffWrapper ${className}`} style={style && style.staffWrapper}>
       {String(hasHeader).trim() &&
         <h1 style={{ fontSize: "3em" }}>{hasHeader}</h1>
       }
