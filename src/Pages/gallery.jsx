@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Carousel from "../Components/DesignComponents/carousel";
 import { facilities } from "../json/gallery.json"
 const preFix = "image (";

@@ -3,8 +3,7 @@ import Layout from "./Layout/jsx/layout";
 import Homepage from "./Pages/homepage";
 import AboutPage from "./Pages/about";
 import OurTeam from "./Pages/team";
-import Gallery from "./Pages/gallery";
-import Carousel from "./Components/DesignComponents/carousel";
+import Gallery from "./Pages/gallery"; 
 import Admission from "./Pages/admission";
 
 const App = () => {
