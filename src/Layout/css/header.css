@@ -68,3 +68,19 @@ header div ul li a {
 
     }
 }
+
+
+
+.activeLink{
+    transition: ease-in-out .06s !important;
+    background-color: green;
+    height: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.activeLink > *{
+    color:white !important;
+}

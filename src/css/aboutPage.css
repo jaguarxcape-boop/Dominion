@@ -1,14 +1,14 @@
 .aboutIntro {
     margin: auto;
     margin-bottom: 150px;
-    width: 90vw;
+    
     padding: 0px 20px;
     transition: 1s;
 }
 
 .aboutIntroContainer {
     background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("../images/Webp/5Z9A8248.webp");
-    
+ 
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,17 +25,14 @@
     text-decoration-line: overline;
     transition: 1s !important;
 
-}
+} */
 
-
-
+ 
 .aboutIntro>p {
     font-weight: lighter;
     line-height: 40px;
     text-align: start;
-    font-size: 1.5em;
-
-    /* text-indent: 100px; */
+    font-size: 1.5em; 
     animation-name: relax;
     animation-timing-function: linear;
     animation-duration: 1s;
@@ -51,8 +48,7 @@
     }
 }
 
-.meetourTeamDiv {
-    /* width: 80vw; */
+.meetourTeamDiv { 
     text-align: start;
     display: flex;
     flex-direction: column;

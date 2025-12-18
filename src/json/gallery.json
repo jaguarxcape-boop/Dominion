@@ -1,0 +1,28 @@
+{
+    "facilities": [
+        {
+            "image": "facilities/kitchen.jpeg",
+            "description": "Kitchen"
+        },
+        {
+            "image": "facilities/lab.jpg",
+            "description": "ICT Lab"
+        },
+        {
+            "image": "facilities/urinal.jpg",
+            "description": "Urinal"
+        },
+        {
+            "image": "facilities/urinal.jpg",
+            "description": "Urinal"
+        },
+        {
+            "image": "facilities/feature.jpg",
+            "description": "Urinal"
+        },
+        {
+            "image": "facilities/feature.jpg",
+            "description": "Urinal"
+        }
+    ]
+}

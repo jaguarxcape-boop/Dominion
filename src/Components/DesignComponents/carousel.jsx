@@ -1,60 +1,82 @@
-import img1 from "../../images/Webp/5Z9A8240.webp"
-import img2 from "../../images/Webp/5Z9A8242.webp"
-import img3 from "../../images/Webp/5Z9A8248.webp"
-import "./carousel.css"
+import "./carousel.css";
+import { useEffect, useRef } from "react";
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
-import { FcNext, FcPrevious } from "react-icons/fc"
+/* =========================
+   Carousel Logic
+   ========================= */
+function initCarousel(carousel) {
+  const track = carousel.querySelector(".carousel-track");
+  const slides = carousel.querySelectorAll(".carousel-slide");
+  const nextBtn = carousel.querySelector(".next");
+  const prevBtn = carousel.querySelector(".prev");
 
+  let index = 0;
+  const total = slides.length;
 
+  if (!track || !total) return;
 
-const CarouselSoul = () => {
-    const carouselInner = document.querySelector(".carouselInner");
-    let currentIndex = 0;
-    const images = document.querySelectorAll(".carouselInner img");
+  function update() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
 
-    const Next = () => {
-        currentIndex++;
-        if (currentIndex >= images.length) {
-            currentIndex = 0;
-        }
+  function next() {
+    index = (index + 1) % total;
+    update();
+  }
 
-        carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+  function prev() {
+    index = (index - 1 + total) % total;
+    update();
+  }
 
-    const Prev = () => {
-        currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = images.length - 1;
-        }
+  nextBtn?.addEventListener("click", next);
+  prevBtn?.addEventListener("click", prev);
 
-        carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-
-    return <>
-
-        <div className="carousel">
-            <div className="carouselInner">
-
-
-                <img src={img1} alt="img1" />
-                <img src={img2} alt="img1" />
-                <img src={img3} alt="img1" />
-
-            </div>
-            <button onClick={Prev} className="prev-btn">
-                <FcPrevious />
-            </button>
-
-            <button onClick={Next} className="next-btn">
-                <FcNext />
-            </button>
-        </div>
-    </>
-}
-const Carousel = () => {
-
-    return <CarouselSoul />
+  update();
 }
 
-export default Carousel
+/* =========================
+   Carousel Component
+   ========================= */
+const Carousel = ({ orientation = "landscape", images = [] }) => {
+
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    if (!carouselRef.current || images.length === 0) return;
+    initCarousel(carouselRef.current);
+  }, [images]);
+
+  if (!images.length) {
+    return <h2 style={{ color: "white" }}>No images available</h2>;
+  }
+
+
+ 
+  return (
+    <div
+      ref={carouselRef}
+
+      className={`carousel ${orientation === "portrait" ? "carousel-height" : ""
+        }`}
+    >
+      <div className="carousel-track">
+        {images.map((item, index) => (
+          <div className="carousel-slide" key={index}>
+            <img src={item.image} alt="" loading="lazy" decoding="async" />
+            {item.description && (
+              <div className="carousel-text">{item.description}</div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Navigation */}
+      <MdArrowBackIos className="carousel-btn prev" />
+      <MdArrowForwardIos className="carousel-btn next" />
+    </div>
+  );
+};
+
+export default Carousel;
