@@ -7,7 +7,7 @@
 }
 
 .aboutIntroContainer {
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('images/5Z9A8248.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('/images/5Z9A8248.webp');
     
  
     background-attachment: fixed;
