@@ -23,7 +23,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-
+{/* 
             <div>
                 <p>
                     Quick Links
@@ -43,7 +43,7 @@ const Footer = () => {
                     </li>
 
                 </ul>
-            </div>
+            </div> */}
 
             {/* <div>
                 <p>LINKS
