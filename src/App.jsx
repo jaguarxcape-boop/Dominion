@@ -3,8 +3,9 @@ import Layout from "./Layout/jsx/layout";
 import Homepage from "./Pages/homepage";
 import AboutPage from "./Pages/about";
 import OurTeam from "./Pages/team";
-import Gallery from "./Pages/gallery"; 
+import Gallery from "./Pages/gallery";
 import Admission from "./Pages/admission";
+import Contact from "./Pages/contact";
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="ourstaff" element={<OurTeam />} />
           <Route path='gallery' element={<Gallery />} />
           <Route path="admission" element={<Admission />} />
+          <Route path='contact' element={<Contact />} />
         </Route>
 
         {/* <Route path="*" element={<Homepage />} /> */}

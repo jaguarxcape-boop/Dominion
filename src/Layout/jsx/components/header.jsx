@@ -13,7 +13,8 @@ const PageLinksToDisplay = () => {
         { to: "about", name: "About" },
         { to: "ourstaff", name: "Ourstaff" },
         { to: "gallery", name: "Gallery" },
-        { to: "admission", name: "Admission" }
+        { to: "admission", name: "Admission" },
+        { to: "contact", name: "Contact" }
     ]
 
 
