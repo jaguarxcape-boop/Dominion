@@ -5,7 +5,7 @@ import { animateScroll } from "../js/animateScroll"
 import { FaDownload } from "react-icons/fa6"
 const Admission = () => {
 
-    useEffect(() => animateScroll, [])
+    useEffect(() => animateScroll())
 
     return <>
 
